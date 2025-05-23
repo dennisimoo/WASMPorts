@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link rel="icon" href="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <a onclick="navigate('index.html')">Home</a>
+        <a onclick="navigate('information.html')">Info</a>
+    </div>
+    
+    <div class="game-list">
+        <div class="game" onclick="loadGame('celeste')">
+            <img src="celeste.jpg" alt="Celeste">
+            <h3>Celeste</h3>
+            <p>A fun game about climbing a mountain.</p>
+        </div>
+        <div class="game" onclick="loadGame('undertale')">
+            <img src="undertale-1536x1085.jpg" alt="Undertale" onerror="this.src='https://assets-prd.ignimgs.com/2021/12/15/undertale-1639608869285.jpg'">
+            <h3>Undertale</h3>
+            <p>A story-driven RPG where you don't have to kill anyone.</p>
+        </div>
+        <div class="game" onclick="loadGame('pizzatower')">
+            <img src="pizzatower.png" alt="Pizza Tower" onerror="this.src='https://static.tvtropes.org/pmwiki/pub/images/pizza_tower_logo.png'">
+            <h3>Pizza Tower</h3>
+            <p>Fast-paced 2D platformer with a unique art style.</p>
+        </div>
+        <div class="game" onclick="loadGame('oneshot')">
+            <img src="product_oneshot_library_stroll_poster_photo1_5f8f961d-0fe5-4492-969f-b3a2318fa6df.webp" alt="OneShot" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/3/31/Oneshot_Game_Cover.png'">
+            <h3>OneShot</h3>
+            <p>A surreal puzzle adventure with a unique protagonist.</p>
+        </div>
+        <div class="game" onclick="loadGame('terraria')">
+            <img src="terraria.jpg" alt="Terraria" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/3/3d/Terraria_screenshot.png'">
+            <h3>Terraria</h3>
+            <p>A sandbox adventure game with building, exploration, and combat.</p>
+        </div>
+    </div>
+    <div id="embed-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
