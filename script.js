@@ -146,7 +146,7 @@ function loadGameVersion(game, version) {
     
     if (game === 'celeste') {
         if (version === 'regular') {
-            embed.src = "http://poynomialhelp.myftp.biz/";
+            embed.src = "https://poynomialhelp.myftp.biz/";
         } else if (version === 'modded') {
             embed.src = "https://celeste.r58playz.dev/";
         }
